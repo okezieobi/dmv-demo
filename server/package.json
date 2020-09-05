@@ -6,9 +6,24 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.11.5",
     "cookie-parser": "~1.4.4",
+    "core-js": "^3.6.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "mongodb": "latest",
+    "mongoose": "latest",
     "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "@babel/node": "latest",
+    "@babel/preset-env": "latest",
+    "@babel/register": "latest",
+    "nodemon": "latest"
   }
 }
