@@ -9,7 +9,8 @@
  */
 
 import { createServer } from 'http';
-import app from '../app';
+import Db from '../utils/db';
+import app from '../../app';
 
 const debug = require('debug')('server:server');
 
@@ -90,6 +91,8 @@ function onListening() {
  * Listen on provided port, on all network interfaces.
  */
 
-server.listen(port);
+server.listen(port, () => console.log(`App is live and listening on port ${port}`));
 server.on('error', onError);
 server.on('listening', onListening);
+Db.connect();
+Db.verifyConnection();
