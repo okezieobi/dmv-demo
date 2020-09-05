@@ -1,10 +1,10 @@
 import { Router } from 'express';
+import UserController from '../controllers/users';
 
 const router = Router();
+const { signup } = UserController;
 
 /* GET users listing. */
-router.get('/', (req, res) => {
-  res.send('respond with a resource');
-});
+router.post('/signup', signup);
 
 export default router;

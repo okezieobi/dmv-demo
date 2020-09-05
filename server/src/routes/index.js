@@ -1,10 +1,8 @@
 import { Router } from 'express';
+import userRouter from './users';
 
 const router = Router();
 
-/* GET home page. */
-router.get('/', (req, res) => {
-  res.render('index', { title: 'Express' });
-});
+router.use('/auth', userRouter);
 
 export default router;

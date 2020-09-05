@@ -10,7 +10,7 @@
 
 import { createServer } from 'http';
 import Db from '../utils/db';
-import app from '../../app';
+import app from '../app';
 
 const debug = require('debug')('server:server');
 
